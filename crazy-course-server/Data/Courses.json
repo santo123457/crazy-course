@@ -1,0 +1,43 @@
+[
+  {
+    "status": true,
+    "data": [
+      {
+        "id": 1,
+        "name": "React",
+        "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+        "total": 8
+      },
+      {
+        "id": 2,
+        "name": "JavaScript",
+        "logo": "https://live.staticflickr.com/65535/52412638962_12e932256a_o.png",
+        "total": 9
+      },
+      {
+        "id": 3,
+        "name": "CSS",
+        "logo": "https://live.staticflickr.com/65535/52413665713_5977a693cb_o.png",
+        "total": 8
+      },
+      {
+        "id": 4,
+        "name": "MongoDB",
+        "logo": "https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png",
+        "total": 8
+      },
+      {
+        "id": 5,
+        "name": "Git",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1FgKCiN-jU9nEiKMlieP1GVXlidi0UdClw&usqp=CAU",
+        "total": 11
+      },
+      {
+        "id": 6,
+        "name": "Node Js",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+        "total": 11
+      }
+    ]
+  }
+]
