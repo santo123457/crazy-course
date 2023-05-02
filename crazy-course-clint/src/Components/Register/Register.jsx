@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from '../Header/Header';
 import { FaFacebookSquare, FaGithub, FaTwitter } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Contexts/Authprovider/AuthProvider';
+
 
 const Register = () => {
+    const {googleLoginProvider} = useContext(AuthContext);
+    const handleGoogleLogin =()=>{
+        googleLoginProvider()
+        .then((result)=>{console.log(result)})
+        .catch((error)=>{
+            console.error(error);
+        })
+    }
     return (
         <div>
         <Header></Header>        
@@ -18,7 +28,7 @@ const Register = () => {
                      <h2>Register Now</h2>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non aperiam cum quas quod reprehenderit.</p>
                      <ul>
-                     <li ><a href="#" className="google "><FcGoogle className='me-1'></FcGoogle>Google</a></li>
+                     <li onClick={handleGoogleLogin}><a href="#" className="google "><FcGoogle className='me-1'></FcGoogle>Google</a></li>
                          <li><a href="#" className="facebook"><FaFacebookSquare className='me-1'> </FaFacebookSquare> facebook</a></li>
                          <li className=' mt-3'><a href="#"  className="twitter"><FaTwitter className='me-1'></FaTwitter> twitter</a></li>
                          
